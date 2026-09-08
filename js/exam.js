@@ -207,7 +207,6 @@ function renderStart() {
     <div class="start-fit">
       <p class="kicker">${esc(EXAM.unit)}</p>
       <h1>${esc(EXAM.title)}</h1>
-      <p class="lead">امتحان ختامي بعد دراسة المعرض. الأسئلة جديدة: ليست من المختبر ولا من «اختبر نفسك». الأنواع: صح وخطأ، اختيار، سيناريو، وصورة جهاز.</p>
       <div class="grid grid-3 start-stats">
         <div class="stat"><b>${n}</b> سؤالًا · ${totalPoints()} درجة</div>
         <div class="stat"><b>${EXAM.minutes} د</b> ثم تسليم تلقائي</div>
