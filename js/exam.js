@@ -199,18 +199,13 @@ function examPayload(g) {
 function renderStart() {
   document.body.classList.add("is-start");
   const n = QUESTIONS.length;
-  const tf = QUESTIONS.filter((q) => q.type === "tf").length;
-  const mcq = QUESTIONS.filter((q) => q.type === "mcq").length;
-  const sc = QUESTIONS.filter((q) => q.type === "scenario").length;
-  const img = QUESTIONS.filter((q) => q.type === "image").length;
   $app.innerHTML = `
     <div class="start-fit">
       <p class="kicker">${esc(EXAM.unit)}</p>
       <h1>${esc(EXAM.title)}</h1>
-      <div class="grid grid-3 start-stats">
+      <div class="grid start-stats">
         <div class="stat"><b>${n}</b> سؤالًا · ${totalPoints()} درجة</div>
         <div class="stat"><b>${EXAM.minutes} د</b> ثم تسليم تلقائي</div>
-        <div class="stat"><b>${tf}+${mcq}+${sc}+${img}</b> صح/خطأ · اختيار · سيناريو · صورة</div>
       </div>
       <article class="panel start-panel">
         <h2>قبل أن تبدأ</h2>

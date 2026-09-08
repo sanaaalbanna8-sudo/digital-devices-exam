@@ -76,7 +76,7 @@ body.is-start .start-fit {
 body.is-start h1 { font-size: clamp(1.35rem, 2.6vw, 1.85rem); margin-bottom: 4px; }
 body.is-start .lead { margin: 0 0 10px; font-size: 0.95rem; line-height: 1.55; }
 body.is-start .kicker { margin-bottom: 2px; font-size: 0.88rem; }
-body.is-start .start-stats { margin: 0 0 10px; gap: 8px; }
+body.is-start .start-stats { margin: 0 0 10px; gap: 8px; grid-template-columns: 1fr 1fr; }
 body.is-start .stat { padding: 8px 12px; }
 body.is-start .stat b { font-size: 1.1rem; }
 body.is-start .start-panel { padding: 14px 18px; }
